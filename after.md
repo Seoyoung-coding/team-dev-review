@@ -34,4 +34,25 @@ get()으로 받아
 ## 북마크 목록 조회기능 만들기
 북마크 엔티티에는 이 3개만 있으면 충분: user / content / createdAt
 
-##
+## like 기능만들기 (북마크와는 차별화)
+| 구분    | Bookmark | Like         |
+| ----- | -------- | ------------ |
+| 목적    | 개인 저장    | 공개 반응        |
+| 중복    | ❌ 1번만 가능 | ❌ 1번만 가능     |
+| 목록 조회 | 내 북마크 목록 | 보통 안 보여줌     |
+| 카운트   | 잘 안 씀    | **좋아요 수 중요** |
+| UX    | 개인용      | SNS 느낌       |
+
+```
+private long likeCount = 0;
+
+public void increaseLike() {
+        this.likeCount++;
+}
+
+public void decreaseLike() {
+if (this.likeCount > 0) {
+            this.likeCount--;}
+}
+```
+
