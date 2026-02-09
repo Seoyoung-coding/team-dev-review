@@ -1,3 +1,5 @@
+Integrated Review and Learning Records for 3-Stage Projects: Basic, Applied, and Advanced (2025.12.18 - 2026.02.25)
+
 # 해야할일 목록 contentTest.http로 시험해본다
 
 앞으로 할것들
